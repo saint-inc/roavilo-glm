@@ -1,0 +1,50 @@
+我要开发一个和groupon.com一模一样的网站，你直接通过chrome浏览器访问这个网站：
+1.研究这个网站的功能、包括哪些页面、PC版和移动版网页的样式、登录后的个人中心包括哪些功能、登录后的商家中心包括哪些功能。
+2.我用laravel、数据库使用mysql、服务器使用CentOS Stream 8、nginx开发这个网站。
+3.现阶段要开发一个和groupon.com一模一样的网站，原样copy功能和设计就行，每个页面的功能都要开发。
+4.开发时将groupon.com的每个页面功能都要一模一样地原样做出来，唯一的区别就是将groupon标志换成moonker标志，其他的一切原样抄groupon.com开发功能。
+5.测试时如果按钮、链接、页面等发现有404页面时，将404页面照抄groupon.com开发出来。
+6.凡事groupon.com有的页面，moonker.com也要有，功能和样式要一模一样，唯一的区别就是将groupon标志换成moonker标志。
+
+我先说一下网站平台未来的定位：
+1.网站平台提供android/ios的app，app现在暂时不开发。
+
+
+现在要做的事情就是：
+1.帮我先开发一个和groupon.com一模一样的网站。
+2.你自己干活，我提供相关网站硬件。
+3.网站暂时使用域名 moonker.com。
+4.数据库我已经建好了，你开发时直接创建数据表就行。
+数据库连接信息只保存在服务器 `.env`，不在项目文档中记录主机、用户名或密码。
+
+
+
+
+现在开发以下几个二级域名的功能：
+investor.moonker.com 原样照抄 investor.groupon.com 的页面功能和样式，一个页面都不能少。
+about.moonker.com 原样照抄 about.groupon.com 的页面功能和样式，一个页面都不能少。
+privacy.moonker.com 照抄 privacy.groupon.com 的页面功能和样式，一个页面都不能少。
+press.moonker.com 原样照抄 press.groupon.com 的页面功能和样式，一个页面都不能少。
+careers.moonker.com 原样照抄 grouponcareers.com 的页面功能和样式，一个页面都不能少。
+唯一的区别就是将groupon的标志换成了moonker标志。
+
+
+
+你将groupon.fr、groupon.de、groupon.it、groupon.es、groupon.pl、groupon.nl、groupon.ie、groupon.ae、groupon.be、groupon.ca、groupon.com.au、groupon.co.uk上的所有页面与groupon.com上的所有页面做对比，看看主要区别是什么，咱们如何实现多国家多语言功能，想一个方案
+
+
+`www.groupon.fr`（独立国家域名，不是 `fr.groupon.com`） | 法语区域设置、EUR、法国目录/定价/库存/税务/支付/SEO/法律配置基线 |
+| `de.moonker.com` | 对应 `www.groupon.de`（德国独立国家域名） | 德语区域设置、EUR、德国站点配置基线 |
+| `it.moonker.com` | 对应 `www.groupon.it`（意大利独立国家域名） | 意大利语区域设置、EUR、意大利站点配置基线 |
+| `es.moonker.com` | 对应 `www.groupon.es`（西班牙独立国家域名） | 西班牙语区域设置、EUR、西班牙站点配置基线 |
+| `pl.moonker.com` | 对应 `www.groupon.pl`（波兰独立国家域名） | 波兰语区域设置、PLN、波兰站点配置基线 |
+| `nl.moonker.com` | 对应 `www.groupon.nl`（荷兰独立国家域名） | 荷兰语区域设置、EUR、荷兰站点配置基线 |
+| `ie.moonker.com` | 对应 `www.groupon.ie`（爱尔兰独立国家域名） | 英语区域设置、EUR、爱尔兰站点配置基线 |
+| `ae.moonker.com` | 对应 `www.groupon.ae`（阿联酋独立国家域名） | 英语区域设置、AED、阿联酋站点配置基线 |
+| `be.moonker.com` | 对应 `www.groupon.be`（比利时独立国家域名） | `fr-BE`/`nl-BE` 双语、EUR、比利时站点配置基线；需多 locale 改造 |
+| `ca.moonker.com` | 对应 `www.groupon.ca`；该入口当前跳转 `www.groupon.com` | 可配置重定向；未来独立运营时启用 `en-CA`/`fr-CA`、CAD 基线 |
+| `au.moonker.com` | 对应 `www.groupon.com.au`（澳大利亚独立国家域名） | 英语区域设置、AUD、澳大利亚站点配置基线 |
+| `uk.moonker.com` | 对应 `www.groupon.co.uk`（英国独立国家域名） | 英语区域设置、GBP、英国目录/定价/库存/税务/支付/SEO/法律配置基线 |
+
+
+
