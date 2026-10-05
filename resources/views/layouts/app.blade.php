@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', '首页') - roavilo</title>
+    <title>@yield('title', '首页') - roavilo-glm</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 <header class="site-header">
     <div class="container header-inner">
-        <a href="{{ route('home') }}" class="logo">roavilo</a>
+        <a href="{{ route('home') }}" class="logo">roavilo-glm</a>
         {{-- 当前城市 + 切换城市入口（对标点评平台顶栏城市切换） --}}
         <a href="{{ route('city.list') }}" class="city-switch">📍 {{ $currentCity->name ?? '上海' }} ▾</a>
         <nav class="main-nav">
@@ -58,7 +58,7 @@
     {{-- 登录态：欢迎条（对标点评平台登录后的提示条） --}}
     <div class="welcome-bar">
         <div class="container">
-            你好，{{ auth()->user()->name }}！欢迎来到 roavilo，发现身边好店 ✨
+            你好，{{ auth()->user()->name }}！欢迎来到 roavilo-glm，发现身边好店 ✨
             <a href="{{ route('user.reviews') }}" style="color:var(--primary);margin-left:auto;font-size:13px">查看我的点评 →</a>
         </div>
     </div>
@@ -66,7 +66,7 @@
     {{-- 非登录态：引导登录条 --}}
     <div class="welcome-bar welcome-bar-guest">
         <div class="container">
-            登录 roavilo，收藏好店、发布点评、抢购团购 🎁
+            登录 roavilo-glm，收藏好店、发布点评、抢购团购 🎁
             <span style="margin-left:auto;display:flex;gap:8px">
                 <a href="/login" class="btn" style="padding:4px 16px">立即登录</a>
                 <a href="/register" class="btn btn-outline" style="padding:4px 16px">免费注册</a>
@@ -87,7 +87,7 @@
 </main>
 <footer class="site-footer">
     <div class="container">
-        <p>© {{ date('Y') }} roavilo.com — 本地生活服务平台</p>
+        <p>© {{ date('Y') }} roavilo-glm.com — 本地生活服务平台</p>
         <p>
             <a href="{{ route('pages.about') }}">关于我们</a> ·
             <a href="{{ route('pages.contact') }}">联系我们</a> ·

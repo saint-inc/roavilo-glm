@@ -2,18 +2,29 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\City;
+use App\Services\CityService;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     */
-    public function test_the_application_returns_a_successful_response(): void
-    {
-        $response = $this->get('/');
+    use RefreshDatabase;
 
-        $response->assertStatus(200);
+    public function test_root_redirects_to_default_city(): void
+    {
+        City::create(['name' => '上海', 'slug' => 'shanghai']);
+
+        $this->get('/')->assertRedirect('/shanghai');
+    }
+
+    public function test_city_home_renders_brand_and_remembers_city(): void
+    {
+        City::create(['name' => '上海', 'slug' => 'shanghai']);
+
+        $this->get('/shanghai')
+            ->assertOk()
+            ->assertSee('roavilo-glm')
+            ->assertCookie(CityService::COOKIE_NAME);
     }
 }

@@ -1,9 +1,14 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "saint-inc/roavilo-glm",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "An open-source local life platform built with Laravel.",
+    "keywords": [
+        "laravel",
+        "local-life",
+        "reviews",
+        "deals"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.3",

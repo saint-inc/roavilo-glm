@@ -3,9 +3,9 @@
 
 @section('content')
 <section class="panel">
-    <h2>roavilo 商户诚信公约</h2>
+    <h2>roavilo-glm 商户诚信公约</h2>
     <div class="about-content">
-        <p>为营造真实可信的本地生活消费环境，入驻 roavilo 的商户须遵守以下公约：</p>
+        <p>为营造真实可信的本地生活消费环境，入驻 roavilo-glm 的商户须遵守以下公约：</p>
         <h3>一、信息真实</h3>
         <ul>
             <li>店铺名称、地址、电话、营业时间等基本信息必须真实准确</li>

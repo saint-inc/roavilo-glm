@@ -3,9 +3,9 @@
 
 @section('content')
 <section class="panel">
-    <h2>关于 roavilo</h2>
+    <h2>关于 roavilo-glm</h2>
     <div class="about-content">
-        <p><strong>roavilo.com</strong> 是一家本地生活服务平台，致力于帮助用户发现身边的好店。</p>
+        <p><strong>roavilo-glm.com</strong> 是一家本地生活服务平台，致力于帮助用户发现身边的好店。</p>
         <p>我们提供<strong>商户信息浏览、真实用户点评、团购优惠、城市生活指南</strong>等服务，覆盖美食、休闲娱乐、丽人、酒店、亲子等生活全品类。</p>
 
         <h3>我们的使命</h3>
@@ -20,7 +20,7 @@
         </ul>
 
         <h3>联系我们</h3>
-        <p>商务合作：bd@roavilo.com ｜ 用户支持：<a href="{{ route('pages.kf') }}" style="color:var(--primary)">客服中心</a></p>
+        <p>商务合作：bd@roavilo-glm.com ｜ 用户支持：<a href="{{ route('pages.kf') }}" style="color:var(--primary)">客服中心</a></p>
     </div>
 </section>
 @endsection

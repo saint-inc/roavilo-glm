@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="panel">
-    <h2>roavilo 隐私政策</h2>
+    <h2>roavilo-glm 隐私政策</h2>
     <div class="about-content">
         <h3>一、我们收集的信息</h3>
         <ul>

@@ -1,11 +1,13 @@
+历史需求草稿（归档）：下文记录最初设想。当前实现范围、原创设计边界及开源授权以 README.md、LICENSE 和功能测试清单为准。
+
 我要开发一个和dianping.com一模一样的网站，你直接通过chrome浏览器访问这个网站：
 1.研究这个网站的功能、包括哪些页面、PC版和移动版网页的样式、登录后的个人中心包括哪些功能、登录后的商家中心包括哪些功能。
 2.我用laravel、数据库使用mysql、服务器使用CentOS Stream 8、nginx开发这个网站。
 3.现阶段要开发一个和dianping.com一模一样的网站，原样copy功能和设计就行，每个页面的功能都要开发。
-4.开发时将dianping.com的每个页面功能都要一模一样地原样做出来，唯一的区别就是将dianping标志换成roavilo标志，其他的一切原样抄dianping.com开发功能。
+4.开发时将dianping.com的每个页面功能都要一模一样地原样做出来，唯一的区别就是将dianping标志换成roavilo-glm标志，其他的一切原样抄dianping.com开发功能。
 5.测试时如果按钮、链接、页面等发现有404页面时，将404页面照抄dianping.com开发出来。
-6.凡事dianping.com有的页面，roavilo.com也要有，功能和样式要一模一样，唯一的区别就是将dianping标志换成roavilo标志。
-7.roavilo网站的在 电脑、ipad、手机 端的效果都要开发出来，要和dianping一模一样。
+6.凡事dianping.com有的页面，roavilo-glm.com也要有，功能和样式要一模一样，唯一的区别就是将dianping标志换成roavilo-glm标志。
+7.roavilo-glm网站的在 电脑、ipad、手机 端的效果都要开发出来，要和dianping一模一样。
 
 我先说一下网站平台未来的定位：
 1.网站平台提供android/ios的app，app现在暂时不开发。
@@ -14,17 +16,17 @@
 现在要做的事情就是：
 1.帮我先开发一个和dianping.com一模一样的网站。
 2.你自己干活，我提供相关网站硬件。
-3.网站暂时使用域名 roavilo.com。
+3.网站暂时使用域名 roavilo-glm.com。
 4.数据库我已经建好了，你开发时直接创建数据表就行。
 数据库主机：localhost
-数据库名：roavilo
+数据库名：roavilo-glm
 端口：3306
-用户名：root
-密码：无
+用户名：通过本地 .env 配置
+密码：通过本地 .env 配置
 
 
-roavilo使用的二级域名与dianping使用的二级域名和三级域名完全一致，例如https://kf.roavilo.com/对应https://kf.dianping.com/
-唯一的区别就是将dianping的标志换成了roavilo标志。
+roavilo-glm使用的二级域名与dianping使用的二级域名和三级域名完全一致，例如https://kf.roavilo-glm.com/对应https://kf.dianping.com/
+唯一的区别就是将dianping的标志换成了roavilo-glm标志。
 
 开发进度要写到项目下的docs文件下的md文件中
 

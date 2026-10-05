@@ -79,7 +79,7 @@ class AuthController extends Controller
         Auth::login($user);
         $request->session()->regenerate();
 
-        return redirect()->route('home')->with('success', '注册成功，欢迎加入 roavilo！');
+        return redirect()->route('home')->with('success', '注册成功，欢迎加入 roavilo-glm！');
     }
 
     /**

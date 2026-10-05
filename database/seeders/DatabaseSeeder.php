@@ -31,8 +31,8 @@ class DatabaseSeeder extends Seeder
 
         // 测试用户（第一个同时是管理员和店主，便于测试后台与商户中心）
         $user = User::firstOrCreate(
-            ['email' => 'test@roavilo.com'],
-            ['name' => '测试用户', 'password' => 'password123', 'bio' => 'roavilo 测试账号', 'is_admin' => true]
+            ['email' => 'test@roavilo-glm.com'],
+            ['name' => '测试用户', 'password' => 'password123', 'bio' => 'roavilo-glm 测试账号', 'is_admin' => true]
         );
         $users = [$user];
         // 普通用户：奇数位带头像/签名（完整资料），偶数位全空（最小资料），便于调试资料页两种展示
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
         ];
         foreach ($normalUsers as $i => [$name, $full]) {
             $users[] = User::firstOrCreate(
-                ['email' => 'user'.($i + 1).'@roavilo.com'],
+                ['email' => 'user'.($i + 1).'@roavilo-glm.com'],
                 $full
                     ? ['name' => $name, 'password' => 'password123', 'avatar' => 'demo/avatar-'.($i + 1).'.png', 'bio' => '爱生活，爱分享消费体验。']
                     : ['name' => $name, 'password' => 'password123']
@@ -245,7 +245,7 @@ class DatabaseSeeder extends Seeder
             ['bug', '头像上传偶发失败', '上传 1.5MB 头像偶尔提示失败，重试后成功。'],
             ['other', '如何注销账号', '想注销账号并删除个人数据，请问流程是怎样的？'],
             ['other', '商户信息修改申请', '店铺搬迁了新地址，想更新商户页面的地址信息。'],
-            ['suggest', '希望上线城市增加', '我是苏州用户，期待 roavilo 尽快开通苏州站。'],
+            ['suggest', '希望上线城市增加', '我是苏州用户，期待 roavilo-glm 尽快开通苏州站。'],
             ['other', '商务合作咨询', '我们是连锁品牌，想咨询批量入驻和推广事宜。'],
         ];
         foreach ($feedbackSeed as $fi => [$type, $title, $content]) {
@@ -261,15 +261,15 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        $this->command->info('Seed 完成：测试账号 test@roavilo.com / password123');
+        $this->command->info('Seed 完成：测试账号 test@roavilo-glm.com / password123');
 
         // 资讯种子数据（平台动态/媒体报道/消费指南）
         $newsSeed = [
-            ['news', 'roavilo 正式上线，首批开通上海站', "roavilo 本地生活服务平台正式上线。\n首期开通上海站，覆盖美食、休闲娱乐、丽人、酒店等 12 大品类。\n用户可发布真实点评、抢购商户团购券，欢迎体验并反馈意见。"],
+            ['news', 'roavilo-glm 正式上线，首批开通上海站', "roavilo-glm 本地生活服务平台正式上线。\n首期开通上海站，覆盖美食、休闲娱乐、丽人、酒店等 12 大品类。\n用户可发布真实点评、抢购商户团购券，欢迎体验并反馈意见。"],
             ['news', '商户中心数据看板全新上线', "本次更新为商户中心新增数据看板。\n店主可实时查看浏览量、评分趋势、团购销量与订单核销情况。\n团购管理支持上下架快捷切换，运营效率大幅提升。"],
             ['news', '核销码功能上线，到店消费更便捷', "用户购买团购并支付成功后，订单将自动生成 12 位核销码。\n到店出示核销码，商户在商户中心一键核销，全程无需纸质凭证。"],
-            ['media', '本地生活赛道新玩家：roavilo 以真实点评切入', "据行业媒体报道，新平台 roavilo 近日正式运营。\n该平台主打一人一店一评的真实点评机制，杜绝水军刷评。\n分析认为，内容真实性将成为本地生活平台的差异化竞争点。", '科技消费日报'],
-            ['media', 'roavilo 发布商户诚信公约', "roavilo 发布商户诚信公约，对虚假宣传、刷单刷评等行为作出明确约束。\n平台将建立违规处理机制，保障消费者权益。", '新商业观察'],
+            ['media', '本地生活赛道新玩家：roavilo-glm 以真实点评切入', "据行业媒体报道，新平台 roavilo-glm 近日正式运营。\n该平台主打一人一店一评的真实点评机制，杜绝水军刷评。\n分析认为，内容真实性将成为本地生活平台的差异化竞争点。", '科技消费日报'],
+            ['media', 'roavilo-glm 发布商户诚信公约', "roavilo-glm 发布商户诚信公约，对虚假宣传、刷单刷评等行为作出明确约束。\n平台将建立违规处理机制，保障消费者权益。", '新商业观察'],
             ['guide', '如何写出一条有用的消费点评', "一条好的点评可以帮助其他消费者做出更好的决策。\n建议包含：到店时间与排队情况、招牌菜品口味、环境与服务、人均消费。\n配上真实照片会更直观，但请勿泄露他人隐私。"],
             ['guide', '团购券使用全攻略', "购买团购后请留意有效期，建议提前致电商户预约。\n到店出示核销码完成核销后订单即为已使用状态。\n未核销的已支付订单可联系客服申请退款。"],
             ['guide', '三步找到心仪好店', "第一步：切换到你所在的城市，按分类浏览或关键词搜索。\n第二步：利用评分、人均、区域筛选缩小范围，参考评分分布与真实点评。\n第三步：收藏心仪商户，购买团购前仔细阅读使用规则。"],

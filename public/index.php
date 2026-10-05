@@ -13,10 +13,10 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 // ---------------------------------------------------------------------
 // 子域路径重写（对应 dianping 子域映射）
 // 在请求对象创建之前重写 REQUEST_URI，保证路由按重写后的路径解析：
-// - merchant.roavilo.com/* → /merchant/*（商户中心，对应 e.dianping.com）
-// - zhaopin.roavilo.com/*  → /jobs/*（招聘，对应 hr/zhaopin.dianping.com）
-// - h5.roavilo.com/*       → /app/*（H5/下载页，对应 h5.dianping.com）
-// - union.roavilo.com/*    → /union-gateway（API 网关欢迎响应，对应 union.dianping.com）
+// - merchant.roavilo-glm.com/* → /merchant/*（商户中心，对应 e.dianping.com）
+// - zhaopin.roavilo-glm.com/*  → /jobs/*（招聘，对应 hr/zhaopin.dianping.com）
+// - h5.roavilo-glm.com/*       → /app/*（H5/下载页，对应 h5.dianping.com）
+// - union.roavilo-glm.com/*    → /union-gateway（API 网关欢迎响应，对应 union.dianping.com）
 // 静态资源（css/js/storage 等）与已带前缀的路径不重写。
 // ---------------------------------------------------------------------
 (function () {
@@ -24,10 +24,10 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
     $host = preg_replace('/:\d+$/', '', $host); // 去掉端口
 
     $map = [
-        'merchant.roavilo.com' => 'merchant',
-        'zhaopin.roavilo.com' => 'jobs',
-        'h5.roavilo.com' => 'app',
-        'union.roavilo.com' => 'union-gateway',
+        'merchant.roavilo-glm.com' => 'merchant',
+        'zhaopin.roavilo-glm.com' => 'jobs',
+        'h5.roavilo-glm.com' => 'app',
+        'union.roavilo-glm.com' => 'union-gateway',
     ];
     if (! isset($map[$host])) {
         return;

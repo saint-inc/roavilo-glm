@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="panel" style="max-width:480px;margin:40px auto">
-    <h2>注册 roavilo 账号</h2>
+    <h2>注册 roavilo-glm 账号</h2>
     <form action="/register" method="POST">
         @csrf
         <div class="form-group">

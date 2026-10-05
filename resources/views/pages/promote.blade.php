@@ -5,7 +5,7 @@
 <section class="panel">
     <h2>推广服务</h2>
     <div class="about-content">
-        <p>roavilo 为商户提供多种推广产品，帮助好店被更多潜在顾客发现：</p>
+        <p>roavilo-glm 为商户提供多种推广产品，帮助好店被更多潜在顾客发现：</p>
 
         <h3>🚀 站内推广</h3>
         <ul>
@@ -25,7 +25,7 @@
         </ul>
 
         <h3>合作联系</h3>
-        <p>商务热线：400-100-1101（9:00-21:00）｜ 邮箱：bd@roavilo.com</p>
+        <p>商务热线：400-100-1101（9:00-21:00）｜ 邮箱：bd@roavilo-glm.com</p>
         <p style="margin-top:14px"><a href="{{ route('merchant.create') }}" class="btn">先去入驻店铺</a></p>
     </div>
 </section>

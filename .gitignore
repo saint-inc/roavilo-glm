@@ -25,3 +25,13 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Local credentials, data exports, and agent state
+.env.*
+!.env.example
+/.agents/
+/.aws/
+*.sql
+*.sql.gz
+*.sqlite
+*.sqlite3

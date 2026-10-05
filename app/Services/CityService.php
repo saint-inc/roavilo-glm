@@ -21,7 +21,7 @@ class CityService
     public const DEFAULT_SLUG = 'shanghai';
 
     /** 城市记忆 cookie 名 */
-    public const COOKIE_NAME = 'roavilo_city';
+    public const COOKIE_NAME = 'roavilo-glm_city';
 
     /** cookie 有效期（天） */
     public const COOKIE_DAYS = 30;

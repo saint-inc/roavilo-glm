@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Web 路由定义 — roavilo 本地生活服务平台
+ * Web 路由定义 — roavilo-glm 本地生活服务平台
  *
  * URL 路径结构对标点评类平台（dianping 风格）：
  * - /                                → 根路径，跳转当前城市首页
@@ -65,7 +65,7 @@ Route::get('/contact', [PageController::class, 'contact'])->name('pages.contact'
 Route::get('/news', [PageController::class, 'newsList'])->name('news.index');
 Route::get('/news/{news}', [PageController::class, 'newsShow'])->name('news.show');
 
-// union 子域网关欢迎响应（union.roavilo.com，对应 union.dianping.com）
+// union 子域网关欢迎响应（union.roavilo-glm.com，对应 union.dianping.com）
 Route::get('/union-gateway', [PageController::class, 'unionGateway'])->name('pages.union');
 
 // ---------------- 前台核心页面（公开，URL 对标点评平台） ----------------

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', '后台') - roavilo 管理后台</title>
+    <title>@yield('title', '后台') - roavilo-glm 管理后台</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style>
         /* 后台专属样式：深色侧边栏布局 */
@@ -27,7 +27,7 @@
 <body>
 <header class="site-header">
     <div class="container header-inner">
-        <a href="{{ route('home') }}" class="logo">roavilo</a>
+        <a href="{{ route('home') }}" class="logo">roavilo-glm</a>
         <span style="color:var(--muted);font-size:13px">管理后台</span>
         <div class="header-right">
             <span style="font-size:13px">{{ auth()->user()->name }}</span>

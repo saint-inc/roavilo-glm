@@ -7,17 +7,17 @@
     <div class="grid grid-2">
         <div class="contact-card">
             <h3>🏢 商务合作</h3>
-            <p class="hotline">bd@roavilo.com</p>
+            <p class="hotline">bd@roavilo-glm.com</p>
             <p class="muted">商户入驻、团购上线、广告推广等业务合作</p>
         </div>
         <div class="contact-card">
             <h3>🛠️ 技术与开发者</h3>
-            <p class="hotline">dev@roavilo.com</p>
+            <p class="hotline">dev@roavilo-glm.com</p>
             <p class="muted">API 接入、数据合作、技术问题反馈</p>
         </div>
         <div class="contact-card">
             <h3>📰 媒体采访</h3>
-            <p class="hotline">press@roavilo.com</p>
+            <p class="hotline">press@roavilo-glm.com</p>
             <p class="muted">媒体报道、品牌合作、活动采访</p>
         </div>
         <div class="contact-card">

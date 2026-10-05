@@ -23,7 +23,7 @@ class PageController extends Controller
     /** 帮助中心 FAQ 数据（按分类组织，后续可迁数据库） */
     private const FAQS = [
         '账号相关' => [
-            ['如何注册 roavilo 账号？', '点击页面右上角「注册」，使用邮箱即可完成注册，全程免费。'],
+            ['如何注册 roavilo-glm 账号？', '点击页面右上角「注册」，使用邮箱即可完成注册，全程免费。'],
             ['忘记密码怎么办？', '在登录页点击「忘记密码」，输入注册邮箱即可获取重置链接（1 小时内有效）。'],
             ['如何修改个人资料？', '登录后进入「个人中心 → 个人资料」，可修改昵称、上传头像、编辑签名。'],
         ],
@@ -38,7 +38,7 @@ class PageController extends Controller
             ['订单状态说明？', '待支付（需完成支付）→ 已支付（可到店核销）→ 已使用（核销完成）；另有已退款/已取消状态。'],
         ],
         '商户入驻' => [
-            ['如何入驻 roavilo？', '登录后进入「商户中心 → 入驻新店铺」，填写店铺信息提交，管理员审核通过后即可上架展示。'],
+            ['如何入驻 roavilo-glm？', '登录后进入「商户中心 → 入驻新店铺」，填写店铺信息提交，管理员审核通过后即可上架展示。'],
             ['入驻需要什么资质？', '需要提供真实的店铺名称、地址与联系方式；营业执照等资质材料将在正式运营阶段要求上传。'],
         ],
     ];
@@ -149,11 +149,11 @@ class PageController extends Controller
     }
 
     /**
-     * 网关欢迎响应（union.roavilo.com，对应 union.dianping.com 的 API 网关行为）
+     * 网关欢迎响应（union.roavilo-glm.com，对应 union.dianping.com 的 API 网关行为）
      */
     public function unionGateway()
     {
-        return response()->json(['code' => 200, 'msg' => 'WelCome roavilo union gateway!']);
+        return response()->json(['code' => 200, 'msg' => 'WelCome roavilo-glm union gateway!']);
     }
 
     /**
