@@ -1,6 +1,6 @@
 # roavilo-glm 项目记忆
 
-开源准备（2026-10-05）：采用 MIT，已补充项目 README、LICENSE、贡献指南、第三方声明和安全报告说明；本地环境信息已泛化。GitHub 可见性以仓库实际设置为准，公开前应确认已有提交历史可对外发布。
+开源准备（2026-10-05）：采用 MIT，已补充项目 README、LICENSE、贡献指南、第三方声明和安全报告说明；本地环境信息已泛化。GitHub 可见性以仓库实际设置为准，公开前应确认已有提交历史可对外发布。验证：Composer 清单校验通过；全新 SQLite 迁移及 Seeder 通过；隔离副本中 3 项测试、6 项断言通过（仅跳过下载缓慢的 Pint 格式工具，保留正式项目依赖）；league/commonmark 升级至 2.10.3，Composer 审计未发现已知漏洞。
 
 当前开发配置（2026-10-05）：Git 仓库为 `https://github.com/saint-inc/roavilo-glm.git`；本地目录为 `<项目路径>/roavilo-glm`；本地数据库为 `roavilo-glm`，各开发者通过本地 `.env` 设置数据库凭据。网站品牌为 `roavilo-glm`，网站域名已更新为 `roavilo-glm.com`（含各子域）。目录改名后需执行 `php artisan storage:link --force` 重建存储软链接，并清理配置与视图缓存。
 
