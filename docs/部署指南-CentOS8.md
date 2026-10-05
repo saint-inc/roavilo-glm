@@ -32,7 +32,7 @@ mysql -uroot -p -e "CREATE DATABASE roavilo DEFAULT CHARACTER SET utf8mb4 COLLAT
 ```bash
 mkdir -p /var/www && cd /var/www
 # 上传代码（git clone 或 scp/rsync）
-git clone <你的仓库地址> roavilo
+git clone https://github.com/saint-inc/roavilo-glm.git roavilo
 cd roavilo
 
 # 安装依赖（生产环境不装 dev 依赖）
